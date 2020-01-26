@@ -1,0 +1,139 @@
+/* Note sur la création des boutons
+Réalisés avec Gimp2, création de bouton simle biseauté avec les paramtères suivants :
+police : Toms handwriting, taille 35
+couleur haut gauche : 230,230,230
+couleur bas droite : 255,255,255
+couleur du texte : 0,0,0
+marge 5, biseau 3
+*/
+/* General */
+body{background-color:white; color: black; font-family:Georgia, Arial, Helvetica, sans-serif; font-size: 14px; text-align: left;}
+h1 {font-size: 30px;text-align: center;}
+h2 {font-size: 20px;text-align: center;}
+h3 {font-size: 16px;text-align: center;}
+a {font-size: 12px;text-align: left; border: none; outline:none; color:black;}
+a:hover {font-weight: bold;}
+img {border: none; outline:none;}
+input {color: black; background-color: white; }
+select{font-size: 12px; color: black; background-color: white;}
+
+/*table.partie {color:white; border: medium solid black;padding: 4px 4px 4px 4px;margin: 4px 4px 4px 4px; }*/
+
+#infobulle {
+  position:absolute;
+  display:none;
+  padding:5px;
+  margin:5px;
+  border:1px solid black;
+  background-color:yellow;
+  color: black; 
+  z-index:9999;
+}
+
+/* page index */
+h1.index {font-size: 30px;text-align: center; color: white; display: inline; vertical-align:100px;}
+h2.index {font-size: 20px;text-align: center; color: white}
+h3.index {font-size: 30px;text-align: center; color: white}
+table.index {height:1000px; background-image:url(images/fondindex.jpg);background-repeat:no-repeat;background-position:50% 50%;margin-left: auto; margin-right: auto; vertical-align:top; }
+table.index2 {border-style: solid ; border-color: #FFFFFF; border-width:1px; padding: 10px ;}
+div.index {text-align:center; color: white;}
+th.index {color:white; border-style: solid ; border-width: 0px 0px 1px 0px ; }
+tr.index {color:white;}
+td.index {color:white; padding: 5px 10px 5px 10px; }
+img.index {margin:10px;}
+input.index {margin:10px; vertical-align:middle; }
+
+/* page vaocmodifierutilisateur */
+h1.compte {font-size: 30px;text-align: center; vertical-align:100px; display: inline;}
+div.compte {text-align:center; color: black; vertical-align:center;}
+div.alerte {background-color: white;font-size: 20px; color:red;}
+table.compte {margin-left: auto; margin-right: auto; vertical-align:top; }
+
+/* page vaoccarte et vaoccartezoom */
+select.carte{color: black; font-size: 14px; background-color: white;}
+table.carte {align:center; margin-left: auto; margin-right: auto; padding: 4px 4px 4px 4px; border-spacing: 0px;}
+a.buttoncarte {margin:10px;}
+
+/* page vaochistorique */
+table.historique {background-image:url(images/parchemin1.jpg); align:center; margin-left: auto; margin-right: auto; padding: 4px 4px 4px 4px;}
+th.historique {color:black}
+td.historique {padding-left: 6px; padding-right: 6px;}
+
+/* page vaocvictoire */
+table.resultat {background-color: white; background-image:url(images/fondmarbre.png); align:center; margin-left: auto; margin-right: auto; padding: 4px 4px 4px 4px; border: medium solid black; text-align: right;}
+td.resultatentete {text-align: center; font-weight: bold;}
+td.ptsvictoire {text-align: center; font-size: 20px; font-weight: bold; padding: 6px;}
+td.total{font-weight: bold; text-align: right; border-top: thin solid black;}
+div.ordres {margin-top:6px;}
+
+/* page vaocqg */
+table.qggeneral {margin-left: auto; margin-right: auto;}
+input.qg {margin:10px; vertical-align:middle;}
+a.qg {color:white;}
+a.buttonqg {margin:10px;}
+
+/* page bataille */
+input.bataille {margin:10px; vertical-align:middle; }
+table.bataille {border: medium solid black; padding: 0px; margin: 0px; border-spacing: 0px; }
+table.enbataille {border-style: none; border-width: 0px; padding: 10px; margin: 10px;  border-spacing: 0px;}
+tr.bataille {padding: 0px; margin: 0px; border: 1px solid black;  }
+td.bataille {padding: 0px; margin: 0px; text-align: center;  border: 1px solid black;  }
+td.unite{border-color: red; border-style: solid; border-width: 3px; background-color: white;}
+div.unite{color:black; border-color: red; border-style: solid; border-width: 3px; margin: 10px; padding: 5px ;background-color: white; text-align: center;}
+div.unitedefense{color:black; border-color: red; border-style: solid; border-width: 8px; margin: 10px; padding: 5px ;background-color: white; text-align: center;}
+div.unitefuite{color:black; border-color: red; border-style: dotted; border-width: 8px; margin: 10px; padding: 5px ;background-color: white; text-align: center;}
+a.buttonbataille {margin:10px; }
+
+/* page aide*/
+div.aidesection {font-size: 20px; text-align: left; padding-top:0px; vertical-align:text-top;}
+div.aidetexte {margin:10px; text-align: left;}
+div.aidenumero {font-size: 20px; font-weight: bold; margin-left:30px;  display: inline;}
+p.aidetexte {text-align: left; }
+p.aidetexte:first-letter {font-size: 30px; font-weight: bold; margin-left:30px;}
+img.aidesection {vertical-align:-69px; }
+a.aide{font-size: 20px;} 
+
+/* pages de campagnes */
+table.campagne {color: black; border: 2px solid black; background-image:url(images/parchemin1.jpg); align:center; margin-left: auto; margin-right: auto; border-spacing: 0px; }
+th.campagne {border: 1px solid black; padding: 5px; text-align: center;}
+th.campagnedroite {border: 1px solid black; padding: 5px; text-align: right;}
+td.campagne {border: 1px solid black; padding: 5px; }
+td.campagnedroite {border: 1px solid black; padding: 5px; text-align: right;}
+td.campagnecentre {border: 1px solid black; padding: 5px; text-align: center;}
+p.campagne {color: black; background-image:url(images/parchemin1.jpg); margin-left:50px; margin-top:0px; margin-bottom:0px; margin-right:50px; padding: 10px ;}
+p.campagne:first-letter {font-size: 30px; font-weight: bold; margin-left:30px;}
+p.commentaire {margin-left: auto; margin-right: auto; text-align:center; }
+td.campagnegras {border: 1px solid black; padding: 5px;  text-align: center; font-weight: bold;}  
+p.campagnevertical
+{
+-webkit-transform:rotate(-90deg); /*Chrome, Safari  */
+-moz-transform:rotate(-90deg); /*firefox  */
+-o-transform:rotate(-90deg); /*Opera  */
+}
+a.buttoncampagne {vertical-align:middle;margin-top:0px; margin-bottom:0px; margin-right:50px; padding: 10px ;}
+
+/* pages de cinematique */
+div.cinema {text-align: center; }
+div.dateHorloge {font-size: 20px; text-align: center; font-weight: bold;}
+.boiteImage {list-style:none;}
+.paginationJour ul {list-style:none;}
+.paginationJour li {list-style:none;}
+span.paginationJourS {float:left; cursor:pointer; height:24px; width:24px; background:blue; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationJourS:hover {float:left; cursor:pointer; height:24px; width:24px; background:white; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationJourSelection {float:left; cursor:pointer; height:24px; width:24px; background:red; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationJourSelection:hover {float:left; cursor:pointer; height:24px; width:24px; background:white; margin:0 4px 0 0; border:1px solid #fff}
+
+span.paginationHeureS {float:left; cursor:pointer; height:8px; width:8px; background:blue; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationHeureS:hover {float:left; cursor:pointer; height:8px; width:8px; background:white; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationHeureSelection {float:left; cursor:pointer; height:8px; width:8px; background:red; margin:0 4px 0 0; border:1px solid #fff}
+span.paginationHeureSelection:hover {float:left; cursor:pointer; height:8px; width:8px; background:white; margin:0 4px 0 0; border:1px solid #fff}
+
+.paginationHeure ul {list-style:none;}
+.paginationHeure li {list-style:none;}
+
+#horloge {position: relative; width: 378px; height: 378px;/*left: 50%; margin: 5em 0 0 -189px;*/}
+#horloge div {position: absolute;}
+
+table.cinematique {cursor:pointer; border: 0px solid black;  margin-left: auto; margin-right: auto; border-spacing: 10px; font-size: 20px; text-align: center; font-weight: bold;}
+td.cinematique {background-image:none; color: black; background-image:url(images/fondmarbre.png);}
+td.cinematiqueSelection {background-image:url(images/fondqg.png); color: white; }
